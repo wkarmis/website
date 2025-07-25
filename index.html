@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
+    <title>Will Karmis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="aura-container">
+        <nav class="nav-bar">
+            <button class="nav-item" onclick="openContentField('about')">about</button>
+            <button class="nav-item" onclick="openContentField('events')">events</button>
+            <button class="nav-item" onclick="openContentField('discography')">discography</button>
+            <button class="nav-item" onclick="openContentField('repository')">repository</button>
+            <button class="nav-item" onclick="openContentField('process')">process</button>
+            <button class="nav-item" onclick="openContentField('contact')">contact</button>
+        </nav>
+        
+        <div class="aura-layer layer-1"></div>
+        <div class="aura-layer layer-2"></div>
+        <div class="aura-layer layer-3"></div>
+        
+        <div class="core" id="core">
+            <div class="name">Will Karmis</div>
+            <div class="subtitle"></div>
+        </div>
+        
+        <div class="energy-point point-1" onclick="playAudioNode('track1', this)" 
+             data-field="creative process" 
+             data-track="ambient_process.mp3"
+             data-title="Creative Process">
+            <div class="play-icon"></div>
+        </div>
+        <div class="energy-point point-2" onclick="playAudioNode('track2', this)" 
+             data-field="sonic archive" 
+             data-track="ambient_archive.mp3"
+             data-title="Sonic Archive">
+            <div class="play-icon"></div>
+        </div>
+        <div class="energy-point point-3" onclick="playAudioNode('track3', this)" 
+             data-field="artistic vision" 
+             data-track="ambient_vision.mp3"
+             data-title="Artistic Vision">
+            <div class="play-icon"></div>
+        </div>
+        <div class="energy-point point-4" onclick="playAudioNode('track4', this)" 
+             data-field="collaboration" 
+             data-track="ambient_connect.mp3"
+             data-title="Collaboration">
+            <div class="play-icon"></div>
+        </div>
+        <div class="energy-point point-5" onclick="playAudioNode('track5', this)" 
+             data-field="methodology" 
+             data-track="ambient_philosophy.mp3"
+             data-title="Methodology">
+            <div class="play-icon"></div>
+        </div>
+        <div class="energy-point point-6" onclick="playAudioNode('track6', this)" 
+             data-field="repository" 
+             data-track="ambient_repository.mp3"
+             data-title="Artist Repository">
+            <div class="play-icon"></div>
+        </div>
+    </div>
+
+    <section class="content-field" id="repository-field">
+        <div class="content-inner">
+            <h1 class="field-title">repository</h1>
+            <div class="field-content">
+                <p>Soon</p>
+            </div>
+        </div>
+    </section>
+   
+    <section class="content-field" id="process-field">
+        <div class="content-inner">
+            <h1 class="field-title">process</h1>
+            
+            <div class="tile-main">
+                <div>
+                    <div class="tile image" style="background-image: url('https://raw.githubusercontent.com/wkarmis/images/refs/heads/main/IMG_2786.jpg');"></div>
+                    <div class="tile image" style="background-image: url('https://raw.githubusercontent.com/wkarmis/images/refs/heads/main/IMG_2037.jpg');"></div>
+                    <div class="tile image" style="background-image: url('https://github.com/wkarmis/images/blob/main/IMG_3855.jpg?raw=true');"></div>
+                </div>
+
+                <div>
+                    <div class="tile image" style="background-image: url('https://raw.githubusercontent.com/wkarmis/images/refs/heads/main/IMG_2546.jpg');"></div>
+                    <div class="tile image" style="background-image: url('https://raw.githubusercontent.com/wkarmis/images/refs/heads/main/IMG_37032.jpeg');"></div>
+                    <div class="tile image" style="background-image: url('https://github.com/wkarmis/images/blob/main/IMG_3816.jpg?raw=true');"></div>
+                </div>
+
+                <div>
+                    <div class="tile image" style="background-image: url('https://github.com/wkarmis/images/blob/main/IMG_3984.jpg?raw=true');"></div>
+                    <div class="tile image" style="background-image: url('https://github.com/wkarmis/images/blob/main/IMG_3921.jpg?raw=true');"></div>
+                    <div class="tile image" style="background-image: url('https://github.com/wkarmis/images/blob/main/IMG_3999.png?raw=true');"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-field" id="about-field">
+        <div class="content-inner">
+            <h1 class="field-title">about</h1>
+            <div class="field-content">
+                <p>Will Karmis creates ambient compositions that emerge from the intersection of analog and digital processes. Using reel-to-reel tape, SuperCollider, and software synthesis, he builds sonic environments where generative algorithms collaborate with human intention. Each piece evolves organically from foundational drones and sound grains, developing into non-narrative experiences that prioritize texture over melody, atmosphere over structure.</p>
+                <br>
+                <p>His practice centers on sound's materiality and the temporal possibilities unique to drone music. These compositions construct immersive environments designed for deep, sustained engagement—spaces where listeners can inhabit sound.</p>
+                <br>
+                <p style="text-align: center;">
+                    <img src="https://raw.githubusercontent.com/wkarmis/images/refs/heads/main/22DSC00091.JPG" 
+                         alt="Artist working with sound equipment" 
+                         style="width:100%; max-width:500px; height:auto;">
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-field" id="discography-field">
+        <div class="content-inner">
+            <h1 class="field-title">discography</h1>
+            <div class="field-content">
+                <p>Soon</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-field" id="events-field">
+        <div class="content-inner">
+            <h1 class="field-title">events</h1>
+            <div class="field-content">
+                <p><strong>2025</strong></p>
+                <p>August 1 | Richmond, VA @ <a href="https://envelope.services/" target="_blank" rel="noopener noreferrer">Envelope Services</a></p>
+                <p>August 16 | Asheville, NC @ <a href="https://www.staticagenc.com/" target="_blank" rel="noopener noreferrer">Static Age</a></p>
+                <p>October 13 | Osaka, JP @ <a href="http://chidoribunka.jp/" target="_blank" rel="noopener noreferrer">Chidori Bunka</a></p>
+                <p>October 14 | Osaka, JP @ <a href="http://chidoribunka.jp/" target="_blank" rel="noopener noreferrer">Chidori Bunka</a></p>
+                <p>October 15 | Osaka, JP @ <a href="http://chidoribunka.jp/" target="_blank" rel="noopener noreferrer">Chidori Bunka</a></p>
+                <p>October 16 | Osaka, JP @ <a href="http://chidoribunka.jp/" target="_blank" rel="noopener noreferrer">Chidori Bunka</a></p>
+                <p>October 17 | Osaka, JP @ <a href="http://chidoribunka.jp/" target="_blank" rel="noopener noreferrer">Chidori Bunka</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-field" id="contact-field">
+        <div class="content-inner">
+            <h1 class="field-title">contact</h1>
+            <div class="field-content">
+                <p style="text-align: center;">
+                    <a href="mailto:info@willkarmis.com">info@willkarmis.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <button class="return-core" id="returnCore" onclick="returnToCore()">← core</button>
+    
+    <div class="audio-info" id="audioInfo">
+        <div class="track-title" id="trackTitle"></div>
+        <div class="track-status" id="trackStatus">Click energy points to play compositions</div>
+    </div>
+
+    <button class="ambient-field" onclick="stopAllAudio()" id="ambientToggle">stop all</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
