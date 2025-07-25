@@ -1,4 +1,4 @@
-# Will Karmis - Artist Website
+# Will Karmis - Website
 
 An interactive ambient music portfolio website featuring immersive audio experiences and visual design.
 
